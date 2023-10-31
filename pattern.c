@@ -20,7 +20,7 @@ void hollowX_square_pattern();
 void square_pattern();
 void hollow_Rhombus_pattern();
 void lefthalf_diamond_pattern();
-
+void heart_pattern();
 int main() {
     // Write C code here
     int option;
@@ -41,7 +41,7 @@ int main() {
     puts("15. inverted_Vstar_pattern");
     puts("16. hollow_square_pattern");
     puts("17. hollowX_square_pattern");
-    
+    puts("18. heart_pattern");
     printf("\nEnter the number to print the given pattern:  \n");
     scanf("%d", &option);
     switch(option) 
@@ -96,6 +96,9 @@ int main() {
             break;
         case 17:
             hollowX_square_pattern();
+            break;
+        case 18:
+            heart_pattern();
             break;
         default:
             printf(" Please select correct option");
@@ -469,4 +472,24 @@ void hollowX_square_pattern()
         printf("\n");
     }    
 }
-
+void heart_pattern()
+{
+    int i, j, row = 5;
+    int col = 6;
+    printf("heart_pattern \n");
+    for(i = 0;i<=row; ++i)
+    {
+        for(j = 0; j <= col; ++j)
+        {
+            if((i==0 && j%3 !=0) || (i==1 && j%3 ==0) || (i-j ==2) || (i+j == 8))
+            {
+                printf(" * ");
+            }
+            else
+            {
+                printf("   ");    
+            }
+        }
+        printf("\n");
+    }
+}
