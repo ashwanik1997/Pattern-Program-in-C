@@ -493,7 +493,22 @@ void hollowX_square_pattern()
 }
 void square_pattern()
 {
-    printf("Code is under development");
+    int i, j, row = 5, col = 5;
+
+    // Print a square pattern
+    printf("Square pattern \n");
+
+    for(i = 1; i <= row; ++i) {
+        for(j = 1; j <= col; ++j) {
+            // Print '*' on the borders and inside
+            if (i == 1 || i == row || j == 1 || j == col) {
+                printf(" * ");
+            } else {
+                printf("   ");  // Print spaces inside the square
+            }
+        }
+        printf("\n");
+    }
 }
 void hollow_Rhombus_pattern()
 {
