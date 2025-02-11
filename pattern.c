@@ -23,87 +23,106 @@ void lefthalf_diamond_pattern();
 void heart_pattern();
 int main() {
     // Write C code here
-    int option;
-    puts("1.  rightangle_triangle ");
-    puts("2.  inverted_rightangle_triangle");
-    puts("3.  arrowshaped_triangle");
-    puts("4.  mirrored_rightangle_triangle");
-    puts("5.  invertedmirrored_rightangle_triangle");
-    puts("5.  mirrored_arrowshaped_triangle");
-    puts("7.  pyramid_pattern");
-    puts("8.  inverted_pyramid_pattern");
-    puts("9.  diamond_pattern");
-    puts("10. upperinverted_lowerpyramid");
-    puts("11. leftdiagonal_pattern");
-    puts("12. rightdiagonal_pattern");
-    puts("13. Xstar_pattern");
-    puts("14. Vstar_pattern");
-    puts("15. inverted_Vstar_pattern");
-    puts("16. hollow_square_pattern");
-    puts("17. hollowX_square_pattern");
-    puts("18. heart_pattern");
-    printf("\nEnter the number to print the given pattern:  \n");
-    scanf("%d", &option);
-    switch(option) 
-    {
-        case 1:
-            rightangle_triangle();
-            break;
-        case 2:
-            inverted_rightangle_triangle();
-            break;
-        case 3:
-            arrowshaped_triangle();
-            break;
-        case 4: 
-            mirrored_rightangle_triangle();
-            break;
-        case 5:
-            invertedmirrored_rightangle_triangle();
-            break;
-        case 6:
-            mirrored_arrowshaped_triangle();
-            break;
-        case 7:
-            pyramid_pattern();
-            break;
-        case 8:
-            inverted_pyramid_pattern();
-            break;
-        case 9:
-            diamond_pattern();
-            break;
-        case 10:
-            upperinverted_lowerpyramid();
-            break;
-        case 11:
-            leftdiagonal_pattern();
-            break;
-        case 12:
-            rightdiagonal_pattern();
-            break;
-        case 13:
-            Xstar_pattern();
-            break;
-        case 14:
-            Vstar_pattern();
-            break;
-        case 15:
-            inverted_Vstar_pattern();
-            break;
-        case 16:
-            hollow_square_pattern();
-            break;
-        case 17:
-            hollowX_square_pattern();
-            break;
-        case 18:
-            heart_pattern();
-            break;
-        default:
-            printf(" Please select correct option");
-            break;
-    }
+    int option; 
+    char ch;
+    do {
+        puts("1.  rightangle_triangle ");
+        puts("2.  inverted_rightangle_triangle");
+        puts("3.  arrowshaped_triangle");
+        puts("4.  mirrored_rightangle_triangle");
+        puts("5.  invertedmirrored_rightangle_triangle");
+        puts("6.  mirrored_arrowshaped_triangle");
+        puts("7.  pyramid_pattern");
+        puts("8.  inverted_pyramid_pattern");
+        puts("9.  diamond_pattern");
+        puts("10. upperinverted_lowerpyramid");
+        puts("11. leftdiagonal_pattern");
+        puts("12. rightdiagonal_pattern");
+        puts("13. Xstar_pattern");
+        puts("14. Vstar_pattern");
+        puts("15. inverted_Vstar_pattern");
+        puts("16. hollow_square_pattern");
+        puts("17. hollowX_square_pattern");
+        puts("18. square_pattern");
+        puts("19. hollow_Rhombus_pattern");
+        puts("20. lefthalf_diamond_pattern");
+        puts("21. heart_pattern");
+        printf("\nEnter the number to print the given pattern:  \n");
+        scanf("%d", &option);
+        switch(option) 
+        {
+            case 1:
+                rightangle_triangle();
+                break;
+            case 2:
+                inverted_rightangle_triangle();
+                break;
+            case 3:
+                arrowshaped_triangle();
+                break;
+            case 4: 
+                mirrored_rightangle_triangle();
+                break;
+            case 5:
+                invertedmirrored_rightangle_triangle();
+                break;
+            case 6:
+                mirrored_arrowshaped_triangle();
+                break;
+            case 7:
+                pyramid_pattern();
+                break;
+            case 8:
+                inverted_pyramid_pattern();
+                break;
+            case 9:
+                diamond_pattern();
+                break;
+            case 10:
+                upperinverted_lowerpyramid();
+                break;
+            case 11:
+                leftdiagonal_pattern();
+                break;
+            case 12:
+                rightdiagonal_pattern();
+                break;
+            case 13:
+                Xstar_pattern();
+                break;
+            case 14:
+                Vstar_pattern();
+                break;
+            case 15:
+                inverted_Vstar_pattern();
+                break;
+            case 16:
+                hollow_square_pattern();
+                break;
+            case 17:
+                hollowX_square_pattern();
+                break;
+            case 18:
+                square_pattern();
+                break;
+            case 19:
+                hollow_Rhombus_pattern();
+                break;
+            case 20: 
+                lefthalf_diamond_pattern();
+                break;
+            case 21:
+                heart_pattern();
+                break;
+            default:
+                printf(" Please select correct option");
+                break;
+        }
+    printf("Press q to exit\r\n");
+    scanf("%c",&ch);
+    fseek(stdin, 0, SEEK_END);
+    }while(ch != 'q' && ch != 'Q');
+    
     return 0;
 }
 
@@ -471,6 +490,18 @@ void hollowX_square_pattern()
         }
         printf("\n");
     }    
+}
+void square_pattern()
+{
+    printf("Code is under development");
+}
+void hollow_Rhombus_pattern()
+{
+   printf("Code is under development"); 
+}
+void lefthalf_diamond_pattern()
+{
+    printf("Code is under development");
 }
 void heart_pattern()
 {
